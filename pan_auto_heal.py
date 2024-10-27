@@ -8,14 +8,14 @@ from datetime import datetime
 import win32com.client as win32
 
 # MongoDB connection strings
-lead_collection_connection_string = "mongodb+srv://prf_intengg_mongo_prod_common_read_user:prod000read000bbnUXbu000mongo@piramal-sourcing-digital-prod-cluster-pl-0.y0ci9.mongodb.net/"
-pan_collection_connection_string = "mongodb+srv://platform_common_read_user:platformreadTXykVbNGg7Qa8CEV@piramal-platform-prod-cluster-pl-0.y0ci9.mongodb.net/"
+lead_collection_connection_string = "/"
+pan_collection_connection_string = ""
 
 # PostgreSQL connection settings
-postgres_host = "postgres-slave.piramalfinance.com"
+postgres_host = "connectionstringbyere"
 postgres_port = 5432
 postgres_user = "prod_postgres_read_user"
-postgres_password = "readX3MlGOq7uvJcBUAHXF"
+postgres_password = "pwd"
 postgres_db = "auth_service_db"
 
 # Connect to MongoDB
