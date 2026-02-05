@@ -1,0 +1,166 @@
+<svg width="1500" height="1500" viewBox="0 0 1500 1500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Layer -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF9F3;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFE8E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFF5F0;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="soft-shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <g id="background-layer">
+    <rect width="1500" height="1500" fill="url(#bg-gradient)"/>
+  </g>
+  
+  <!-- Floral Elements Layer -->
+  <g id="floral-elements-layer" opacity="0.8">
+    <!-- Top Left Corner - Rose Petals -->
+    <g id="corner-top-left">
+      <ellipse cx="120" cy="120" rx="40" ry="35" fill="#FFD4D4" opacity="0.6" transform="rotate(-25 120 120)"/>
+      <ellipse cx="140" cy="100" rx="35" ry="30" fill="#FFC0CB" opacity="0.7" transform="rotate(15 140 100)"/>
+      <ellipse cx="100" cy="140" rx="38" ry="33" fill="#FFB6C1" opacity="0.6" transform="rotate(-45 100 140)"/>
+      <ellipse cx="85" cy="110" rx="30" ry="28" fill="#FFDAE0" opacity="0.65" transform="rotate(30 85 110)"/>
+      <circle cx="120" cy="120" r="25" fill="#FFE4E1" opacity="0.5"/>
+      
+      <!-- Jasmine strand -->
+      <circle cx="180" cy="80" r="12" fill="#FFFEF0" stroke="#D4AF37" stroke-width="1"/>
+      <circle cx="200" cy="95" r="12" fill="#FFFEF0" stroke="#D4AF37" stroke-width="1"/>
+      <circle cx="215" cy="115" r="12" fill="#FFFEF0" stroke="#D4AF37" stroke-width="1"/>
+      <path d="M 180 80 Q 190 87 200 95 T 215 115" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+    </g>
+    
+    <!-- Top Right Corner - Marigold -->
+    <g id="corner-top-right">
+      <circle cx="1380" cy="120" r="45" fill="#FFD700" opacity="0.4"/>
+      <circle cx="1380" cy="120" r="35" fill="#FFA500" opacity="0.5"/>
+      <circle cx="1380" cy="120" r="25" fill="#FF8C00" opacity="0.6"/>
+      <circle cx="1365" cy="105" r="15" fill="#FFDAB9" opacity="0.7"/>
+      <circle cx="1395" cy="105" r="15" fill="#FFDAB9" opacity="0.7"/>
+      <circle cx="1365" cy="135" r="15" fill="#FFDAB9" opacity="0.7"/>
+      <circle cx="1395" cy="135" r="15" fill="#FFDAB9" opacity="0.7"/>
+      
+      <!-- Rose accent -->
+      <ellipse cx="1340" cy="160" rx="25" ry="22" fill="#FFB6C1" opacity="0.6" transform="rotate(25 1340 160)"/>
+      <ellipse cx="1355" cy="175" rx="22" ry="20" fill="#FFC0CB" opacity="0.65" transform="rotate(-15 1355 175)"/>
+    </g>
+    
+    <!-- Bottom Left Corner - Jasmine Cluster -->
+    <g id="corner-bottom-left">
+      <circle cx="100" cy="1380" r="14" fill="#FFFEF0" stroke="#D4AF37" stroke-width="1.2"/>
+      <circle cx="125" cy="1390" r="14" fill="#FFFEF0" stroke="#D4AF37" stroke-width="1.2"/>
+      <circle cx="145" cy="1375" r="14" fill="#FFFEF0" stroke="#D4AF37" stroke-width="1.2"/>
+      <circle cx="115" cy="1360" r="14" fill="#FFFEF0" stroke="#D4AF37" stroke-width="1.2"/>
+      <circle cx="135" cy="1350" r="14" fill="#FFFEF0" stroke="#D4AF37" stroke-width="1.2"/>
+      
+      <!-- Rose petals -->
+      <ellipse cx="180" cy="1400" rx="30" ry="26" fill="#FFD4D4" opacity="0.65" transform="rotate(45 180 1400)"/>
+      <ellipse cx="200" cy="1385" rx="28" ry="24" fill="#FFC0CB" opacity="0.7" transform="rotate(-30 200 1385)"/>
+    </g>
+    
+    <!-- Bottom Right Corner - Rose Bouquet -->
+    <g id="corner-bottom-right">
+      <ellipse cx="1380" cy="1380" rx="42" ry="38" fill="#FFB6C1" opacity="0.6" transform="rotate(20 1380 1380)"/>
+      <ellipse cx="1400" cy="1365" rx="38" ry="34" fill="#FFC0CB" opacity="0.7" transform="rotate(-25 1400 1365)"/>
+      <ellipse cx="1365" cy="1400" rx="40" ry="36" fill="#FFD4D4" opacity="0.65" transform="rotate(50 1365 1400)"/>
+      <ellipse cx="1350" cy="1370" rx="35" ry="32" fill="#FFDAE0" opacity="0.6" transform="rotate(-10 1350 1370)"/>
+      <circle cx="1380" cy="1385" r="28" fill="#FFE4E1" opacity="0.5"/>
+      
+      <!-- Marigold accent -->
+      <circle cx="1320" cy="1340" r="18" fill="#FFA500" opacity="0.5"/>
+      <circle cx="1320" cy="1340" r="12" fill="#FF8C00" opacity="0.6"/>
+    </g>
+    
+    <!-- Decorative gold dots -->
+    <circle cx="750" cy="200" r="3" fill="#D4AF37" opacity="0.6"/>
+    <circle cx="780" cy="195" r="2" fill="#D4AF37" opacity="0.5"/>
+    <circle cx="720" cy="198" r="2.5" fill="#D4AF37" opacity="0.55"/>
+    <circle cx="750" cy="1300" r="3" fill="#D4AF37" opacity="0.6"/>
+    <circle cx="720" cy="1295" r="2" fill="#D4AF37" opacity="0.5"/>
+    <circle cx="780" cy="1298" r="2.5" fill="#D4AF37" opacity="0.55"/>
+  </g>
+  
+  <!-- Text Layer -->
+  <g id="text-layer">
+    <!-- Header -->
+    <text x="750" y="280" font-family="'Playfair Display', 'Georgia', serif" font-size="64" font-weight="600" fill="#8B6F47" text-anchor="middle" letter-spacing="2">
+      Scan & Pay
+    </text>
+    
+    <!-- Brand Name -->
+    <text x="750" y="350" font-family="'Cormorant Garamond', 'Georgia', serif" font-size="48" font-weight="500" fill="#D4AF37" text-anchor="middle" letter-spacing="3">
+      ChennaiPooStudio
+    </text>
+    
+    <!-- Decorative Quote -->
+    <text x="750" y="405" font-family="'Dancing Script', 'Brush Script MT', cursive" font-size="28" font-style="italic" fill="#C8A882" text-anchor="middle" opacity="0.85">
+      "Where every bloom tells a story"
+    </text>
+    
+    <!-- Sub-text below QR -->
+    <text x="750" y="1120" font-family="'Lato', 'Arial', sans-serif" font-size="32" font-weight="400" fill="#8B6F47" text-anchor="middle" letter-spacing="1">
+      Secure UPI / GPay Payment
+    </text>
+    
+    <!-- Footer Website -->
+    <text x="750" y="1220" font-family="'Lato', 'Arial', sans-serif" font-size="28" font-weight="300" fill="#B8956A" text-anchor="middle" letter-spacing="0.5">
+      chennaipoostudio.github.io
+    </text>
+    
+    <!-- Additional cute caption -->
+    <text x="750" y="1265" font-family="'Dancing Script', cursive" font-size="24" fill="#D4AF37" text-anchor="middle" opacity="0.75">
+      Crafted with love & fresh petals 🌸
+    </text>
+  </g>
+  
+  <!-- QR Code Placeholder Layer -->
+  <g id="qr-placeholder-layer" filter="url(#soft-shadow)">
+    <!-- Gold border frame -->
+    <rect x="500" y="475" width="500" height="500" fill="none" stroke="#D4AF37" stroke-width="8" rx="15"/>
+    <rect x="490" y="465" width="520" height="520" fill="none" stroke="#EDD5A6" stroke-width="2" rx="18"/>
+    
+    <!-- White background for QR -->
+    <rect x="520" y="495" width="460" height="460" fill="#FFFFFF" rx="10"/>
+    
+    <!-- QR Placeholder pattern -->
+    <rect x="540" y="515" width="420" height="420" fill="#F5F5F5" rx="5"/>
+    
+    <!-- Placeholder text -->
+    <text x="750" y="710" font-family="'Arial', sans-serif" font-size="36" font-weight="300" fill="#CCCCCC" text-anchor="middle">
+      QR CODE
+    </text>
+    <text x="750" y="755" font-family="'Arial', sans-serif" font-size="24" font-weight="300" fill="#DDDDDD" text-anchor="middle">
+      Place your UPI/GPay QR here
+    </text>
+    
+    <!-- Corner markers (QR code style) -->
+    <rect x="560" y="535" width="60" height="60" fill="none" stroke="#999999" stroke-width="8"/>
+    <rect x="572" y="547" width="36" height="36" fill="#999999"/>
+    
+    <rect x="880" y="535" width="60" height="60" fill="none" stroke="#999999" stroke-width="8"/>
+    <rect x="892" y="547" width="36" height="36" fill="#999999"/>
+    
+    <rect x="560" y="855" width="60" height="60" fill="none" stroke="#999999" stroke-width="8"/>
+    <rect x="572" y="867" width="36" height="36" fill="#999999"/>
+  </g>
+  
+  <!-- Logo Placeholder Layer -->
+  <g id="logo-placeholder-layer">
+    <circle cx="750" cy="1360" r="55" fill="#FFFFFF" stroke="#D4AF37" stroke-width="3" filter="url(#soft-shadow)"/>
+    <text x="750" y="1375" font-family="'Arial', sans-serif" font-size="20" fill="#D4AF37" text-anchor="middle" font-weight="600">
+      LOGO
+    </text>
+  </g>
+</svg>
